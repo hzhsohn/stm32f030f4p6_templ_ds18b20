@@ -1,0 +1,134 @@
+Dependencies for Project 'STM32F030Demo', Target 'Stm32f030demo': (DO NOT MODIFY !)
+F (.\main.c)(0x5B44B121)(-c --cpu Cortex-M0 -g -O0 --apcs=interwork -I ..\CORE -I ..\HARDWARE -I ..\STM32F03x_FWLib\inc -I ..\STM32F03x_FWLib\src -I ..\User -I ..\SYSTEM-I C:\Users\han.zh\Desktop\STM32F030串口\User\RTE-I C:\App\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-I C:\App\Keil_v5\ARM\PACK\Keil\STM32F0xx_DFP\2.0.0\Drivers\CMSIS\Device\ST\STM32F0xx\Include-D__UVISION_VERSION="520" -D_RTE_ -DSTM32F030x6 -DUSE_STDPERIPH_DRIVER -DSTM32F0XX-o ..\obj\main.o --omf_browse ..\obj\main.crf --depend ..\obj\main.d)
+I (stm32f0xx.h)(0x4F6BFDB8)
+I (..\CORE\core_cm0.h)(0x4F6BFDB8)
+I (C:\App\Keil_v5\ARM\ARMCC\include\stdint.h)(0x56FE42DE)
+I (..\CORE\core_cmInstr.h)(0x4F6BFDB8)
+I (..\CORE\core_cmFunc.h)(0x4F6BFDB8)
+I (system_stm32f0xx.h)(0x4F6BFDB8)
+I (stm32f0xx_conf.h)(0x536A18A2)
+I (..\STM32F03x_FWLib\inc\stm32f0xx_gpio.h)(0x4F6BFDB8)
+I (..\User\stm32f0xx.h)(0x4F6BFDB8)
+I (..\STM32F03x_FWLib\inc\stm32f0xx_rcc.h)(0x4F6BFDB8)
+I (..\STM32F03x_FWLib\inc\stm32f0xx_usart.h)(0x4F6BFDB8)
+I (..\STM32F03x_FWLib\inc\stm32f0xx_misc.h)(0x4F6BFDB8)
+I (..\SYSTEM\delay.h)(0x52B5C126)
+I (..\HARDWARE\led.h)(0x5B44B1ED)
+I (..\HARDWARE\USART1.h)(0x536DABC2)
+I (C:\App\Keil_v5\ARM\ARMCC\include\stdio.h)(0x56FE42DE)
+F (.\stm32f0xx_it.c)(0x4F6BFDC2)(-c --cpu Cortex-M0 -g -O0 --apcs=interwork -I ..\CORE -I ..\HARDWARE -I ..\STM32F03x_FWLib\inc -I ..\STM32F03x_FWLib\src -I ..\User -I ..\SYSTEM-I C:\Users\han.zh\Desktop\STM32F030串口\User\RTE-I C:\App\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-I C:\App\Keil_v5\ARM\PACK\Keil\STM32F0xx_DFP\2.0.0\Drivers\CMSIS\Device\ST\STM32F0xx\Include-D__UVISION_VERSION="520" -D_RTE_ -DSTM32F030x6 -DUSE_STDPERIPH_DRIVER -DSTM32F0XX-o ..\obj\stm32f0xx_it.o --omf_browse ..\obj\stm32f0xx_it.crf --depend ..\obj\stm32f0xx_it.d)
+I (stm32f0xx_it.h)(0x4F6BFDC2)
+I (stm32f0xx.h)(0x4F6BFDB8)
+I (..\CORE\core_cm0.h)(0x4F6BFDB8)
+I (C:\App\Keil_v5\ARM\ARMCC\include\stdint.h)(0x56FE42DE)
+I (..\CORE\core_cmInstr.h)(0x4F6BFDB8)
+I (..\CORE\core_cmFunc.h)(0x4F6BFDB8)
+I (system_stm32f0xx.h)(0x4F6BFDB8)
+I (stm32f0xx_conf.h)(0x536A18A2)
+I (..\STM32F03x_FWLib\inc\stm32f0xx_gpio.h)(0x4F6BFDB8)
+I (..\User\stm32f0xx.h)(0x4F6BFDB8)
+I (..\STM32F03x_FWLib\inc\stm32f0xx_rcc.h)(0x4F6BFDB8)
+I (..\STM32F03x_FWLib\inc\stm32f0xx_usart.h)(0x4F6BFDB8)
+I (..\STM32F03x_FWLib\inc\stm32f0xx_misc.h)(0x4F6BFDB8)
+F (.\system_stm32f0xx.c)(0x4F6BFDB8)(-c --cpu Cortex-M0 -g -O0 --apcs=interwork -I ..\CORE -I ..\HARDWARE -I ..\STM32F03x_FWLib\inc -I ..\STM32F03x_FWLib\src -I ..\User -I ..\SYSTEM-I C:\Users\han.zh\Desktop\STM32F030串口\User\RTE-I C:\App\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-I C:\App\Keil_v5\ARM\PACK\Keil\STM32F0xx_DFP\2.0.0\Drivers\CMSIS\Device\ST\STM32F0xx\Include-D__UVISION_VERSION="520" -D_RTE_ -DSTM32F030x6 -DUSE_STDPERIPH_DRIVER -DSTM32F0XX-o ..\obj\system_stm32f0xx.o --omf_browse ..\obj\system_stm32f0xx.crf --depend ..\obj\system_stm32f0xx.d)
+I (stm32f0xx.h)(0x4F6BFDB8)
+I (..\CORE\core_cm0.h)(0x4F6BFDB8)
+I (C:\App\Keil_v5\ARM\ARMCC\include\stdint.h)(0x56FE42DE)
+I (..\CORE\core_cmInstr.h)(0x4F6BFDB8)
+I (..\CORE\core_cmFunc.h)(0x4F6BFDB8)
+I (system_stm32f0xx.h)(0x4F6BFDB8)
+I (stm32f0xx_conf.h)(0x536A18A2)
+I (..\STM32F03x_FWLib\inc\stm32f0xx_gpio.h)(0x4F6BFDB8)
+I (..\User\stm32f0xx.h)(0x4F6BFDB8)
+I (..\STM32F03x_FWLib\inc\stm32f0xx_rcc.h)(0x4F6BFDB8)
+I (..\STM32F03x_FWLib\inc\stm32f0xx_usart.h)(0x4F6BFDB8)
+I (..\STM32F03x_FWLib\inc\stm32f0xx_misc.h)(0x4F6BFDB8)
+F (..\CORE\startup_stm32f0xx.s)(0x4F6BFDB8)(--cpu Cortex-M0 -g --apcs=interwork -I C:\Users\han.zh\Desktop\STM32F030串口\User\RTE-I C:\App\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-I C:\App\Keil_v5\ARM\PACK\Keil\STM32F0xx_DFP\2.0.0\Drivers\CMSIS\Device\ST\STM32F0xx\Include--pd "__UVISION_VERSION SETA 520" --pd "_RTE_ SETA 1" --pd "STM32F030x6 SETA 1"--list .\startup_stm32f0xx.lst --xref -o ..\obj\startup_stm32f0xx.o --depend ..\obj\startup_stm32f0xx.d)
+F (..\HARDWARE\led.c)(0x5B44AFE6)(-c --cpu Cortex-M0 -g -O0 --apcs=interwork -I ..\CORE -I ..\HARDWARE -I ..\STM32F03x_FWLib\inc -I ..\STM32F03x_FWLib\src -I ..\User -I ..\SYSTEM-I C:\Users\han.zh\Desktop\STM32F030串口\User\RTE-I C:\App\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-I C:\App\Keil_v5\ARM\PACK\Keil\STM32F0xx_DFP\2.0.0\Drivers\CMSIS\Device\ST\STM32F0xx\Include-D__UVISION_VERSION="520" -D_RTE_ -DSTM32F030x6 -DUSE_STDPERIPH_DRIVER -DSTM32F0XX-o ..\obj\led.o --omf_browse ..\obj\led.crf --depend ..\obj\led.d)
+I (..\HARDWARE\LED.h)(0x5B44B1ED)
+I (..\User\stm32f0xx.h)(0x4F6BFDB8)
+I (..\CORE\core_cm0.h)(0x4F6BFDB8)
+I (C:\App\Keil_v5\ARM\ARMCC\include\stdint.h)(0x56FE42DE)
+I (..\CORE\core_cmInstr.h)(0x4F6BFDB8)
+I (..\CORE\core_cmFunc.h)(0x4F6BFDB8)
+I (..\User\system_stm32f0xx.h)(0x4F6BFDB8)
+I (..\User\stm32f0xx_conf.h)(0x536A18A2)
+I (..\STM32F03x_FWLib\inc\stm32f0xx_gpio.h)(0x4F6BFDB8)
+I (..\STM32F03x_FWLib\inc\stm32f0xx_rcc.h)(0x4F6BFDB8)
+I (..\STM32F03x_FWLib\inc\stm32f0xx_usart.h)(0x4F6BFDB8)
+I (..\STM32F03x_FWLib\inc\stm32f0xx_misc.h)(0x4F6BFDB8)
+F (..\HARDWARE\USART1.c)(0x536DB9DA)(-c --cpu Cortex-M0 -g -O0 --apcs=interwork -I ..\CORE -I ..\HARDWARE -I ..\STM32F03x_FWLib\inc -I ..\STM32F03x_FWLib\src -I ..\User -I ..\SYSTEM-I C:\Users\han.zh\Desktop\STM32F030串口\User\RTE-I C:\App\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-I C:\App\Keil_v5\ARM\PACK\Keil\STM32F0xx_DFP\2.0.0\Drivers\CMSIS\Device\ST\STM32F0xx\Include-D__UVISION_VERSION="520" -D_RTE_ -DSTM32F030x6 -DUSE_STDPERIPH_DRIVER -DSTM32F0XX-o ..\obj\usart1.o --omf_browse ..\obj\usart1.crf --depend ..\obj\usart1.d)
+I (..\HARDWARE\USART1.h)(0x536DABC2)
+I (..\User\stm32f0xx.h)(0x4F6BFDB8)
+I (..\CORE\core_cm0.h)(0x4F6BFDB8)
+I (C:\App\Keil_v5\ARM\ARMCC\include\stdint.h)(0x56FE42DE)
+I (..\CORE\core_cmInstr.h)(0x4F6BFDB8)
+I (..\CORE\core_cmFunc.h)(0x4F6BFDB8)
+I (..\User\system_stm32f0xx.h)(0x4F6BFDB8)
+I (..\User\stm32f0xx_conf.h)(0x536A18A2)
+I (..\STM32F03x_FWLib\inc\stm32f0xx_gpio.h)(0x4F6BFDB8)
+I (..\STM32F03x_FWLib\inc\stm32f0xx_rcc.h)(0x4F6BFDB8)
+I (..\STM32F03x_FWLib\inc\stm32f0xx_usart.h)(0x4F6BFDB8)
+I (..\STM32F03x_FWLib\inc\stm32f0xx_misc.h)(0x4F6BFDB8)
+I (C:\App\Keil_v5\ARM\ARMCC\include\stdio.h)(0x56FE42DE)
+F (..\SYSTEM\delay.c)(0x52B5C282)(-c --cpu Cortex-M0 -g -O0 --apcs=interwork -I ..\CORE -I ..\HARDWARE -I ..\STM32F03x_FWLib\inc -I ..\STM32F03x_FWLib\src -I ..\User -I ..\SYSTEM-I C:\Users\han.zh\Desktop\STM32F030串口\User\RTE-I C:\App\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-I C:\App\Keil_v5\ARM\PACK\Keil\STM32F0xx_DFP\2.0.0\Drivers\CMSIS\Device\ST\STM32F0xx\Include-D__UVISION_VERSION="520" -D_RTE_ -DSTM32F030x6 -DUSE_STDPERIPH_DRIVER -DSTM32F0XX-o ..\obj\delay.o --omf_browse ..\obj\delay.crf --depend ..\obj\delay.d)
+I (..\SYSTEM\delay.h)(0x52B5C126)
+I (..\User\stm32f0xx.h)(0x4F6BFDB8)
+I (..\CORE\core_cm0.h)(0x4F6BFDB8)
+I (C:\App\Keil_v5\ARM\ARMCC\include\stdint.h)(0x56FE42DE)
+I (..\CORE\core_cmInstr.h)(0x4F6BFDB8)
+I (..\CORE\core_cmFunc.h)(0x4F6BFDB8)
+I (..\User\system_stm32f0xx.h)(0x4F6BFDB8)
+I (..\User\stm32f0xx_conf.h)(0x536A18A2)
+I (..\STM32F03x_FWLib\inc\stm32f0xx_gpio.h)(0x4F6BFDB8)
+I (..\STM32F03x_FWLib\inc\stm32f0xx_rcc.h)(0x4F6BFDB8)
+I (..\STM32F03x_FWLib\inc\stm32f0xx_usart.h)(0x4F6BFDB8)
+I (..\STM32F03x_FWLib\inc\stm32f0xx_misc.h)(0x4F6BFDB8)
+F (..\STM32F03x_FWLib\src\stm32f0xx_gpio.c)(0x4F6BFDB8)(-c --cpu Cortex-M0 -g -O0 --apcs=interwork -I ..\CORE -I ..\HARDWARE -I ..\STM32F03x_FWLib\inc -I ..\STM32F03x_FWLib\src -I ..\User -I ..\SYSTEM-I C:\Users\han.zh\Desktop\STM32F030串口\User\RTE-I C:\App\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-I C:\App\Keil_v5\ARM\PACK\Keil\STM32F0xx_DFP\2.0.0\Drivers\CMSIS\Device\ST\STM32F0xx\Include-D__UVISION_VERSION="520" -D_RTE_ -DSTM32F030x6 -DUSE_STDPERIPH_DRIVER -DSTM32F0XX-o ..\obj\stm32f0xx_gpio.o --omf_browse ..\obj\stm32f0xx_gpio.crf --depend ..\obj\stm32f0xx_gpio.d)
+I (..\STM32F03x_FWLib\inc\stm32f0xx_gpio.h)(0x4F6BFDB8)
+I (..\User\stm32f0xx.h)(0x4F6BFDB8)
+I (..\CORE\core_cm0.h)(0x4F6BFDB8)
+I (C:\App\Keil_v5\ARM\ARMCC\include\stdint.h)(0x56FE42DE)
+I (..\CORE\core_cmInstr.h)(0x4F6BFDB8)
+I (..\CORE\core_cmFunc.h)(0x4F6BFDB8)
+I (..\User\system_stm32f0xx.h)(0x4F6BFDB8)
+I (..\User\stm32f0xx_conf.h)(0x536A18A2)
+I (..\STM32F03x_FWLib\inc\stm32f0xx_rcc.h)(0x4F6BFDB8)
+I (..\STM32F03x_FWLib\inc\stm32f0xx_usart.h)(0x4F6BFDB8)
+I (..\STM32F03x_FWLib\inc\stm32f0xx_misc.h)(0x4F6BFDB8)
+F (..\STM32F03x_FWLib\src\stm32f0xx_rcc.c)(0x4F6BFDB8)(-c --cpu Cortex-M0 -g -O0 --apcs=interwork -I ..\CORE -I ..\HARDWARE -I ..\STM32F03x_FWLib\inc -I ..\STM32F03x_FWLib\src -I ..\User -I ..\SYSTEM-I C:\Users\han.zh\Desktop\STM32F030串口\User\RTE-I C:\App\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-I C:\App\Keil_v5\ARM\PACK\Keil\STM32F0xx_DFP\2.0.0\Drivers\CMSIS\Device\ST\STM32F0xx\Include-D__UVISION_VERSION="520" -D_RTE_ -DSTM32F030x6 -DUSE_STDPERIPH_DRIVER -DSTM32F0XX-o ..\obj\stm32f0xx_rcc.o --omf_browse ..\obj\stm32f0xx_rcc.crf --depend ..\obj\stm32f0xx_rcc.d)
+I (..\STM32F03x_FWLib\inc\stm32f0xx_rcc.h)(0x4F6BFDB8)
+I (..\User\stm32f0xx.h)(0x4F6BFDB8)
+I (..\CORE\core_cm0.h)(0x4F6BFDB8)
+I (C:\App\Keil_v5\ARM\ARMCC\include\stdint.h)(0x56FE42DE)
+I (..\CORE\core_cmInstr.h)(0x4F6BFDB8)
+I (..\CORE\core_cmFunc.h)(0x4F6BFDB8)
+I (..\User\system_stm32f0xx.h)(0x4F6BFDB8)
+I (..\User\stm32f0xx_conf.h)(0x536A18A2)
+I (..\STM32F03x_FWLib\inc\stm32f0xx_gpio.h)(0x4F6BFDB8)
+I (..\STM32F03x_FWLib\inc\stm32f0xx_usart.h)(0x4F6BFDB8)
+I (..\STM32F03x_FWLib\inc\stm32f0xx_misc.h)(0x4F6BFDB8)
+F (..\STM32F03x_FWLib\src\stm32f0xx_misc.c)(0x4F6BFDB8)(-c --cpu Cortex-M0 -g -O0 --apcs=interwork -I ..\CORE -I ..\HARDWARE -I ..\STM32F03x_FWLib\inc -I ..\STM32F03x_FWLib\src -I ..\User -I ..\SYSTEM-I C:\Users\han.zh\Desktop\STM32F030串口\User\RTE-I C:\App\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-I C:\App\Keil_v5\ARM\PACK\Keil\STM32F0xx_DFP\2.0.0\Drivers\CMSIS\Device\ST\STM32F0xx\Include-D__UVISION_VERSION="520" -D_RTE_ -DSTM32F030x6 -DUSE_STDPERIPH_DRIVER -DSTM32F0XX-o ..\obj\stm32f0xx_misc.o --omf_browse ..\obj\stm32f0xx_misc.crf --depend ..\obj\stm32f0xx_misc.d)
+I (..\STM32F03x_FWLib\inc\stm32f0xx_misc.h)(0x4F6BFDB8)
+I (..\User\stm32f0xx.h)(0x4F6BFDB8)
+I (..\CORE\core_cm0.h)(0x4F6BFDB8)
+I (C:\App\Keil_v5\ARM\ARMCC\include\stdint.h)(0x56FE42DE)
+I (..\CORE\core_cmInstr.h)(0x4F6BFDB8)
+I (..\CORE\core_cmFunc.h)(0x4F6BFDB8)
+I (..\User\system_stm32f0xx.h)(0x4F6BFDB8)
+I (..\User\stm32f0xx_conf.h)(0x536A18A2)
+I (..\STM32F03x_FWLib\inc\stm32f0xx_gpio.h)(0x4F6BFDB8)
+I (..\STM32F03x_FWLib\inc\stm32f0xx_rcc.h)(0x4F6BFDB8)
+I (..\STM32F03x_FWLib\inc\stm32f0xx_usart.h)(0x4F6BFDB8)
+F (..\STM32F03x_FWLib\src\stm32f0xx_usart.c)(0x4F6BFDB8)(-c --cpu Cortex-M0 -g -O0 --apcs=interwork -I ..\CORE -I ..\HARDWARE -I ..\STM32F03x_FWLib\inc -I ..\STM32F03x_FWLib\src -I ..\User -I ..\SYSTEM-I C:\Users\han.zh\Desktop\STM32F030串口\User\RTE-I C:\App\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-I C:\App\Keil_v5\ARM\PACK\Keil\STM32F0xx_DFP\2.0.0\Drivers\CMSIS\Device\ST\STM32F0xx\Include-D__UVISION_VERSION="520" -D_RTE_ -DSTM32F030x6 -DUSE_STDPERIPH_DRIVER -DSTM32F0XX-o ..\obj\stm32f0xx_usart.o --omf_browse ..\obj\stm32f0xx_usart.crf --depend ..\obj\stm32f0xx_usart.d)
+I (..\STM32F03x_FWLib\inc\stm32f0xx_usart.h)(0x4F6BFDB8)
+I (..\User\stm32f0xx.h)(0x4F6BFDB8)
+I (..\CORE\core_cm0.h)(0x4F6BFDB8)
+I (C:\App\Keil_v5\ARM\ARMCC\include\stdint.h)(0x56FE42DE)
+I (..\CORE\core_cmInstr.h)(0x4F6BFDB8)
+I (..\CORE\core_cmFunc.h)(0x4F6BFDB8)
+I (..\User\system_stm32f0xx.h)(0x4F6BFDB8)
+I (..\User\stm32f0xx_conf.h)(0x536A18A2)
+I (..\STM32F03x_FWLib\inc\stm32f0xx_gpio.h)(0x4F6BFDB8)
+I (..\STM32F03x_FWLib\inc\stm32f0xx_rcc.h)(0x4F6BFDB8)
+I (..\STM32F03x_FWLib\inc\stm32f0xx_misc.h)(0x4F6BFDB8)
