@@ -2,7 +2,7 @@
 ..\obj\led.o: ..\HARDWARE\LED.h
 ..\obj\led.o: ..\User\stm32f0xx.h
 ..\obj\led.o: ..\CORE\core_cm0.h
-..\obj\led.o: C:\App\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+..\obj\led.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
 ..\obj\led.o: ..\CORE\core_cmInstr.h
 ..\obj\led.o: ..\CORE\core_cmFunc.h
 ..\obj\led.o: ..\User\system_stm32f0xx.h

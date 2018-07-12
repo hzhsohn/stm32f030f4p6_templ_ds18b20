@@ -5,6 +5,8 @@
 "..\obj\startup_stm32f0xx.o"
 "..\obj\led.o"
 "..\obj\usart1.o"
+"..\obj\ds18b20.o"
+"..\obj\output.o"
 "..\obj\delay.o"
 "..\obj\stm32f0xx_gpio.o"
 "..\obj\stm32f0xx_rcc.o"

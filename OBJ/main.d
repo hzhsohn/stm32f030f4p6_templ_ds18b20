@@ -1,7 +1,7 @@
 ..\obj\main.o: main.c
 ..\obj\main.o: stm32f0xx.h
 ..\obj\main.o: ..\CORE\core_cm0.h
-..\obj\main.o: C:\App\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+..\obj\main.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
 ..\obj\main.o: ..\CORE\core_cmInstr.h
 ..\obj\main.o: ..\CORE\core_cmFunc.h
 ..\obj\main.o: system_stm32f0xx.h
@@ -13,5 +13,7 @@
 ..\obj\main.o: ..\STM32F03x_FWLib\inc\stm32f0xx_misc.h
 ..\obj\main.o: ..\SYSTEM\delay.h
 ..\obj\main.o: ..\HARDWARE\led.h
+..\obj\main.o: ..\HARDWARE\output.h
 ..\obj\main.o: ..\HARDWARE\USART1.h
-..\obj\main.o: C:\App\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+..\obj\main.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+..\obj\main.o: ..\HARDWARE\ds18b20.h
