@@ -22,7 +22,7 @@ int monitor_temperat_val=0;
 //-----------------------------------------------------
 void udoTemperature_cb(s16 temperature)
 {
-	printf("temperature=%0.1f ,tigger=%0.1f\r\n",temperature*0.1f,monitor_temperat_val*0.1f);
+	printf("{\"temperature\":%0.1f,\"trigger\":%0.1f}",temperature*0.1f,monitor_temperat_val*0.1f);
 	
 	if(temperature<monitor_temperat_val)
 		OUTP1_ON;
