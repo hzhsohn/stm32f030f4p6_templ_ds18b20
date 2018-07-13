@@ -1,13 +1,7 @@
 #ifndef __DS18B20_H
 #define __DS18B20_H
 
-#include "stm32f0xx.h"
-
-#define u8_t unsigned char
-#define u8 unsigned char
-#define u32_t unsigned int
-#define u16_t unsigned short
-#define s16 short
+#include "delay.h"
 
 
 #define DS_RCC_AHB_GPIO	RCC_AHBPeriph_GPIOA

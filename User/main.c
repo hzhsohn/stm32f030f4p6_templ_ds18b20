@@ -4,16 +4,27 @@
 #include "output.h"
 #include "USART1.h"
 #include "ds18b20.h"
+#include "key.h"
 
+//------------------------------------------------------
+//按键
+EzhKeyEvent ev;
+EzhKeyState GPIOAStatus1;//一个GPIO对应一个EzhKeyState对象
+EzhKeyState GPIOAStatus2;
+//-----------------------------------------------------
+//温度
 int ntmp;
 s16 rWaterTemperature=0,rWaterTemp=0;
 int isCheckWaterSensorErr=0; 
-
+u32 gettemp=0;
+//监控温度值
+int monitor_temperat_val=0;
+//-----------------------------------------------------
 void udoTemperature_cb(s16 temperature)
 {
-	printf("temperature=%0.1f\r\n",temperature*0.1f);
+	printf("temperature=%0.1f ,tigger=%0.1f\r\n",temperature*0.1f,monitor_temperat_val*0.1f);
 	
-	if(temperature<310)
+	if(temperature<monitor_temperat_val)
 		OUTP1_ON;
 	else
 		OUTP1_OFF;
@@ -56,18 +67,52 @@ int main(void)
   LED_Init();
 	OUTPUT_Init();
   USART1_Init(9600);	
-	
+	//初始化按键
+	zhSCM_GPIOConfig(GPIOA, GPIO_Pin_3); 
+	zhSCM_GPIOConfig(GPIOA, GPIO_Pin_4); 
+	zhSCM_initKeyState(&GPIOAStatus1);
+	zhSCM_initKeyState(&GPIOAStatus2);
+	//监控温度值默认38度
+	monitor_temperat_val=380;
+	//
 	printf("STM32F030F4P6 USART TEST\r\n");
 		
   while (1)
   {	
-		//LED灯
-	  delay_ms(500);
-    LED1_ON;  
-		delay_ms(500);
-		LED1_OFF; 
 		//温度
-    TemperatureProc();
+    if(gettemp>100000)
+		{
+			LED1_ON;//LED灯
+			TemperatureProc();
+			gettemp=0;
+		}		
+		LED1_OFF;//LED灯
+		gettemp++;
+		
+		//按键1
+		ev=zhSCM_keyState(&GPIOAStatus1,GPIOA,GPIO_Pin_3);
+    switch(ev)
+    {
+        case ZH_KEY_EVENT_DOWN:
+        break;
+        case ZH_KEY_EVENT_PRESS:
+        break;
+        case ZH_KEY_EVENT_UP:
+					monitor_temperat_val-=5; 
+        break;
+    }
+		//按键2
+		ev=zhSCM_keyState(&GPIOAStatus2,GPIOA,GPIO_Pin_4);
+    switch(ev)
+    {
+        case ZH_KEY_EVENT_DOWN:
+        break;
+        case ZH_KEY_EVENT_PRESS:
+        break;
+        case ZH_KEY_EVENT_UP:
+					monitor_temperat_val+=5; 
+        break;
+    }
   }
  
 }

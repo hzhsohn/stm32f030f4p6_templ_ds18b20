@@ -1,5 +1,4 @@
 #include "ds18b20.h"
-#include "delay.h"
 
 //初始化DS18B20的IO口 DQ 同时检测DS的存在
 //返回1:不存在

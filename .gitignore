@@ -1,0 +1,17 @@
+*.ldb
+*.sdf
+*.ilk
+*.pdb
+*.pch
+*.tlog
+*.obj
+*.suo
+Thumbs.db
+.DS_Store
+
+debug/
+release/
+ipch/
+History/
+__Previews/
+OBJ/

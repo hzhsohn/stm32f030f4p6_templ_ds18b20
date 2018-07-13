@@ -427,6 +427,11 @@
               <FileType>1</FileType>
               <FilePath>..\HARDWARE\output.c</FilePath>
             </File>
+            <File>
+              <FileName>key.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\HARDWARE\key.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
