@@ -20,24 +20,26 @@
 		ev=zhSCM_keyState(&GPIOAStatus1,GPIOA,GPIO_Pin_3);
     switch(ev)
     {
-        case ZH_KEY_EVENT_DOWN:
-        break;
-        case ZH_KEY_EVENT_PRESS:
-        break;
-        case ZH_KEY_EVENT_UP:
-					LED1_ON;  
+			case ZH_KEY_EVENT_NONE:
+				break;
+      case ZH_KEY_EVENT_DOWN:
+				break;
+      case ZH_KEY_EVENT_PRESS:
+				break;
+      case ZH_KEY_EVENT_UP:
         break;
     }
 		//°´¼ü2
 		ev=zhSCM_keyState(&GPIOAStatus2,GPIOA,GPIO_Pin_4);
     switch(ev)
     {
-        case ZH_KEY_EVENT_DOWN:
+			case ZH_KEY_EVENT_NONE:
+				break;
+      case ZH_KEY_EVENT_DOWN:
         break;
-        case ZH_KEY_EVENT_PRESS:
+      case ZH_KEY_EVENT_PRESS:
         break;
-        case ZH_KEY_EVENT_UP:
-					LED1_OFF; 
+      case ZH_KEY_EVENT_UP:
         break;
     }
 	}

@@ -432,6 +432,11 @@
               <FileType>1</FileType>
               <FilePath>..\HARDWARE\key.c</FilePath>
             </File>
+            <File>
+              <FileName>flash_rw.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\HARDWARE\flash_rw.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
@@ -466,6 +471,11 @@
               <FileName>stm32f0xx_usart.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\STM32F03x_FWLib\src\stm32f0xx_usart.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm32f0xx_flash.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\STM32F03x_FWLib\src\stm32f0xx_flash.c</FilePath>
             </File>
           </Files>
         </Group>

@@ -5,6 +5,7 @@
 #include "USART1.h"
 #include "ds18b20.h"
 #include "key.h"
+#include "flash_rw.h"
 
 //------------------------------------------------------
 //按键
@@ -72,8 +73,15 @@ int main(void)
 	zhSCM_GPIOConfig(GPIOA, GPIO_Pin_4); 
 	zhSCM_initKeyState(&GPIOAStatus1);
 	zhSCM_initKeyState(&GPIOAStatus2);
-	//监控温度值默认38度
-	monitor_temperat_val=380;
+	//触发温度
+	FLASH_ReadByte(STARTADDR ,(uint8_t*)&monitor_temperat_val,sizeof(monitor_temperat_val));
+	if(monitor_temperat_val<10 || monitor_temperat_val>1000)
+	{
+		//温度不在正常范围就设为默认值
+		monitor_temperat_val=380; //默认触发温度38度
+		FLASH_WriteByte(STARTADDR,(uint8_t*)&monitor_temperat_val,sizeof(monitor_temperat_val));
+	}
+	printf("monitor_temperat_val=%d",monitor_temperat_val);
 	//
 	printf("{\"system:\":\"startup\"}");
 		
@@ -93,24 +101,30 @@ int main(void)
 		ev=zhSCM_keyState(&GPIOAStatus1,GPIOA,GPIO_Pin_3);
     switch(ev)
     {
-        case ZH_KEY_EVENT_DOWN:
-        break;
-        case ZH_KEY_EVENT_PRESS:
-        break;
-        case ZH_KEY_EVENT_UP:
+			case ZH_KEY_EVENT_NONE:
+				break;
+      case ZH_KEY_EVENT_DOWN:
+				break;
+      case ZH_KEY_EVENT_PRESS:
+				break;
+      case ZH_KEY_EVENT_UP:
 					monitor_temperat_val-=5; 
+					FLASH_WriteByte(STARTADDR,(uint8_t*)&monitor_temperat_val,sizeof(monitor_temperat_val));
         break;
     }
 		//按键2
 		ev=zhSCM_keyState(&GPIOAStatus2,GPIOA,GPIO_Pin_4);
     switch(ev)
     {
-        case ZH_KEY_EVENT_DOWN:
+			case ZH_KEY_EVENT_NONE:
+				break;
+      case ZH_KEY_EVENT_DOWN:
         break;
-        case ZH_KEY_EVENT_PRESS:
+      case ZH_KEY_EVENT_PRESS:
         break;
-        case ZH_KEY_EVENT_UP:
+      case ZH_KEY_EVENT_UP:
 					monitor_temperat_val+=5; 
+					FLASH_WriteByte(STARTADDR,(uint8_t*)&monitor_temperat_val,sizeof(monitor_temperat_val));
         break;
     }
   }
