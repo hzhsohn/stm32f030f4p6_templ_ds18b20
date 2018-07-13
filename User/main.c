@@ -75,12 +75,12 @@ int main(void)
 	//监控温度值默认38度
 	monitor_temperat_val=380;
 	//
-	printf("STM32F030F4P6 USART TEST\r\n");
+	printf("{\"system:\":\"startup\"}");
 		
   while (1)
   {	
 		//温度
-    if(gettemp>100000)
+    if(gettemp>200000)
 		{
 			LED1_ON;//LED灯
 			TemperatureProc();
