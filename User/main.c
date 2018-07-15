@@ -67,7 +67,7 @@ int main(void)
 	DS18B20_Init();
   LED_Init();
 	OUTPUT_Init();
-  USART1_Init(9600);	
+  USART1_Init(115200);	
 	//初始化按键
 	zhSCM_GPIOConfig(GPIOA, GPIO_Pin_3); 
 	zhSCM_GPIOConfig(GPIOA, GPIO_Pin_4); 
@@ -81,7 +81,7 @@ int main(void)
 		monitor_temperat_val=380; //默认触发温度38度
 		FLASH_WriteByte(STARTADDR,(uint8_t*)&monitor_temperat_val,sizeof(monitor_temperat_val));
 	}
-	printf("monitor_temperat_val=%d",monitor_temperat_val);
+	//printf("monitor_temperat_val=%d",monitor_temperat_val);
 	//
 	printf("{\"system:\":\"startup\"}");
 		

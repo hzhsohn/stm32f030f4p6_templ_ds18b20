@@ -6,6 +6,6 @@
 #include <stdio.h>
 
 
-void USART1_Init(uint16_t baud);
+void USART1_Init(uint32_t baud);
 
 #endif

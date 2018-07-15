@@ -28,7 +28,7 @@ int fputc(int ch, FILE *f)
 #endif 
 
 /* USART≥ı ºªØ */
-void USART1_Init(uint16_t baud)
+void USART1_Init(uint32_t baud)
 {
 	GPIO_InitTypeDef GPIO_InitStructure;
 	USART_InitTypeDef USART_InitStructure;
