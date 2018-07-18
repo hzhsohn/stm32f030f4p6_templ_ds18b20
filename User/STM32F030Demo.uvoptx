@@ -179,6 +179,16 @@
           <WinNumber>1</WinNumber>
           <ItemText>retry,0x0A</ItemText>
         </Ww>
+        <Ww>
+          <count>1</count>
+          <WinNumber>1</WinNumber>
+          <ItemText>monitor_temperat_val,0x0A</ItemText>
+        </Ww>
+        <Ww>
+          <count>2</count>
+          <WinNumber>1</WinNumber>
+          <ItemText>temperature,0x0A</ItemText>
+        </Ww>
       </WatchWindow1>
       <MemoryWindow2>
         <Mm>

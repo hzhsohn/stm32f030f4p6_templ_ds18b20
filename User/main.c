@@ -24,16 +24,30 @@ int monitor_temperat_val=0;
 void udoTemperature_cb(s16 temperature)
 {
 	printf("{\"temperature\":%0.1f,\"trigger\":%0.1f}",temperature*0.1f,monitor_temperat_val*0.1f);
-	
+	//继电器控制
 	if(temperature<monitor_temperat_val)
-		OUTP1_ON;
+	{
+		OUTP1_SET(1);
+	}
 	else
-		OUTP1_OFF;
+	{
+		OUTP1_SET(0);
+	}
+	//风扇控制
+	if(temperature<monitor_temperat_val ||  //当前温度小于控制温度
+		temperature - monitor_temperat_val >1) //当前温度大于控制温度超过0.1度
+	{
+		OUTP2_SET(1);
+	}
+	else
+	{
+		OUTP2_SET(0);
+	}
 }
 void udoTemperatureErr_cb()
 {
 	printf("temperature err\r\n");
-	OUTP1_OFF;
+	OUTP1_SET(0);
 }
 
 void TemperatureProc()
@@ -86,15 +100,15 @@ int main(void)
 	printf("{\"system:\":\"startup\"}");
 		
   while (1)
-  {	
+  {
 		//温度
     if(gettemp>200000)
 		{
-			LED1_ON;//LED灯
+			LED1_SET(1);//LED灯
 			TemperatureProc();
 			gettemp=0;
 		}		
-		LED1_OFF;//LED灯
+		LED1_SET(0);//LED灯
 		gettemp++;
 		
 		//按键1
@@ -108,7 +122,7 @@ int main(void)
       case ZH_KEY_EVENT_PRESS:
 				break;
       case ZH_KEY_EVENT_UP:
-					monitor_temperat_val-=5; 
+					monitor_temperat_val-=1; 
 					FLASH_WriteByte(STARTADDR,(uint8_t*)&monitor_temperat_val,sizeof(monitor_temperat_val));
         break;
     }
@@ -123,7 +137,7 @@ int main(void)
       case ZH_KEY_EVENT_PRESS:
         break;
       case ZH_KEY_EVENT_UP:
-					monitor_temperat_val+=5; 
+					monitor_temperat_val+=1; 
 					FLASH_WriteByte(STARTADDR,(uint8_t*)&monitor_temperat_val,sizeof(monitor_temperat_val));
         break;
     }
