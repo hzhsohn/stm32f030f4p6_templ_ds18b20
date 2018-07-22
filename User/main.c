@@ -27,11 +27,25 @@ void udoTemperature_cb(s16 temperature)
 	//继电器控制,在接近目标温度-1度后停止加热
 	if((temperature+10)<monitor_temperat_val)
 	{
-		OUTP1_SET(1);
+			OUTP1_SET(1);
 	}
 	else
 	{
-		OUTP1_SET(0);
+			//定时加热
+			static int nnn=0;
+			nnn++;
+			if(nnn<30)
+			{
+				OUTP1_SET(0);
+			}		
+			else
+			{
+				OUTP1_SET(1);
+				if(nnn>31)
+				{
+					nnn=0;			
+				}
+			}
 	}
 	//风扇控制
 	if(temperature<monitor_temperat_val)
