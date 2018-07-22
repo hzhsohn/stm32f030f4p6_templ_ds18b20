@@ -24,8 +24,8 @@ int monitor_temperat_val=0;
 void udoTemperature_cb(s16 temperature)
 {
 	printf("{\"temperature\":%0.1f,\"trigger\":%0.1f}",temperature*0.1f,monitor_temperat_val*0.1f);
-	//继电器控制,在接近目标温度0.2度后停止加热
-	if((temperature+2)<monitor_temperat_val)
+	//继电器控制,在接近目标温度-1度后停止加热
+	if((temperature+10)<monitor_temperat_val)
 	{
 		OUTP1_SET(1);
 	}
@@ -40,21 +40,7 @@ void udoTemperature_cb(s16 temperature)
 	}
 	else	
 	{
-		//风扇定时周期转动
-		static int nnn=0;
-		nnn++;
-		if(nnn<30)
-		{
-			OUTP2_SET(0);
-		}		
-		else
-		{
-			OUTP2_SET(1);
-			if(nnn>36)
-			{
-				nnn=0;			
-			}
-		}
+		OUTP2_SET(0);
 	}
 }
 void udoTemperatureErr_cb()
