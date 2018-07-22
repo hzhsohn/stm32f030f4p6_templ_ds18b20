@@ -611,10 +611,10 @@ Image Symbol Table
     __rt_exit_ls                             0x08000179   Thumb Code     0  rtexit2.o(.ARM.Collect$$rtexit$$00000003)
     __rt_exit_prels_1                        0x08000179   Thumb Code     0  rtexit2.o(.ARM.Collect$$rtexit$$00000002)
     __rt_exit_exit                           0x0800017d   Thumb Code     0  rtexit2.o(.ARM.Collect$$rtexit$$00000004)
-    udoTemperature_cb                        0x08000185   Thumb Code   172  main.o(.text)
-    udoTemperatureErr_cb                     0x08000231   Thumb Code    20  main.o(.text)
-    TemperatureProc                          0x08000245   Thumb Code   128  main.o(.text)
-    main                                     0x080002c5   Thumb Code   294  main.o(.text)
+    udoTemperature_cb                        0x08000185   Thumb Code   174  main.o(.text)
+    udoTemperatureErr_cb                     0x08000233   Thumb Code    20  main.o(.text)
+    TemperatureProc                          0x08000247   Thumb Code   128  main.o(.text)
+    main                                     0x080002c7   Thumb Code   294  main.o(.text)
     NMI_Handler                              0x08000479   Thumb Code     2  stm32f0xx_it.o(.text)
     HardFault_Handler                        0x0800047b   Thumb Code     4  stm32f0xx_it.o(.text)
     SVC_Handler                              0x0800047f   Thumb Code     2  stm32f0xx_it.o(.text)
@@ -1044,7 +1044,7 @@ Image component sizes
         98          0          0          0          0       1145   flash_rw.o
        176          0          0          0          0       1585   key.o
         42          0          0          0          0      84719   led.o
-       756        142          0         28          0      34038   main.o
+       756        140          0         28          0      34038   main.o
         76          4          0          0          0        486   output.o
         56         26        192          0       1536        600   startup_stm32f0xx.o
       1512         30          0          0          0       7076   stm32f0xx_flash.o
@@ -1057,7 +1057,7 @@ Image component sizes
        224          8          0          4          0       2826   usart1.o
 
     ----------------------------------------------------------------------
-      7916        370        224         72       1536     163781   Object Totals
+      7916        368        224         72       1536     163781   Object Totals
          0          0         32          0          0          0   (incl. Generated)
          4          0          0          0          0          0   (incl. Padding)
 
@@ -1135,9 +1135,9 @@ Image component sizes
 
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   
 
-     13176        522        420         72       1632     164185   Grand Totals
-     13176        522        420         72       1632     164185   ELF Image Totals
-     13176        522        420         72          0          0   ROM Totals
+     13176        520        420         72       1632     164185   Grand Totals
+     13176        520        420         72       1632     164185   ELF Image Totals
+     13176        520        420         72          0          0   ROM Totals
 
 ==============================================================================
 
