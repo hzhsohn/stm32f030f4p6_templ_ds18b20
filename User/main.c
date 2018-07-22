@@ -29,7 +29,7 @@ void udoTemperature_cb(s16 temperature)
 	{
 			OUTP1_SET(1);
 	}
-	else
+	else if(temperature<monitor_temperat_val) //小于目标温度定时加热
 	{
 			//定时加热
 			static int nnn=0;
@@ -46,6 +46,10 @@ void udoTemperature_cb(s16 temperature)
 					nnn=0;			
 				}
 			}
+	}
+	else
+	{
+		OUTP1_SET(0);
 	}
 	//风扇控制
 	if(temperature<monitor_temperat_val)
