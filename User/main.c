@@ -34,14 +34,27 @@ void udoTemperature_cb(s16 temperature)
 		OUTP1_SET(0);
 	}
 	//风扇控制
-	if(temperature<monitor_temperat_val ||  //当前温度小于控制温度
-		temperature - monitor_temperat_val >1) //当前温度大于控制温度超过0.1度
-	{
+	if(temperature<monitor_temperat_val)
+	{		
 		OUTP2_SET(1);
 	}
-	else
+	else	
 	{
-		OUTP2_SET(0);
+		//风扇定时周期转动
+		static int nnn=0;
+		nnn++;
+		if(nnn<10*3)
+		{
+			OUTP2_SET(0);
+		}		
+		else
+		{
+			OUTP2_SET(1);
+			if(nnn>10*4)
+			{
+				nnn=0;			
+			}
+		}
 	}
 }
 void udoTemperatureErr_cb()
