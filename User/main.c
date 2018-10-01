@@ -20,40 +20,51 @@ int isCheckWaterSensorErr=0;
 u32 gettemp=0;
 //监控温度值
 int monitor_temperat_val=0;
+//是否已经达到温度
+int g_isAchieveTemperat=0;
 //-----------------------------------------------------
-void udoTemperature_cb(s16 temperature)
+void udoTemperature_cb(s16 currentTemperature)
 {
-	printf("{\"temperature\":%0.1f,\"trigger\":%0.1f}",temperature*0.1f,monitor_temperat_val*0.1f);
-	//继电器控制,在接近目标温度-1度后停止加热
-	if((temperature+10)<monitor_temperat_val)
+	printf("{\"temperature\":%0.1f,\"trigger\":%0.1f}",currentTemperature*0.1f,monitor_temperat_val*0.1f);
+	//当前温度低于控制温度超过一度,直接加热么控制温度
+	if(monitor_temperat_val - currentTemperature >= 10 )
 	{
+			g_isAchieveTemperat=0;
+	}
+	//继电器控制,在接近目标温度-1度后停止加热
+	if(currentTemperature<monitor_temperat_val && 0==g_isAchieveTemperat)
+	{
+		  g_isAchieveTemperat=1;
 			OUTP1_SET(1);
 	}
-	else if(temperature<monitor_temperat_val) //小于目标温度定时加热
+	else 
 	{
-			//定时加热
-			static int nnn=0;
-			nnn++;
-			if(nnn<30)
+			if(currentTemperature<monitor_temperat_val) //小于目标温度定时加热
 			{
-				OUTP1_SET(0);
-			}		
+					static int nnn=0;
+					//间隔性进行加热
+					nnn++;
+					if(nnn<30)
+					{
+						OUTP1_SET(0);
+					}		
+					else
+					{
+						OUTP1_SET(1);
+						if(nnn>31)
+						{
+							nnn=0;			
+						}
+					}
+			}
 			else
 			{
-				OUTP1_SET(1);
-				if(nnn>31)
-				{
-					nnn=0;			
-				}
+					OUTP1_SET(0);
 			}
 	}
-	else
-	{
-		OUTP1_SET(0);
-	}
 	//风扇控制
-	if(temperature<monitor_temperat_val)
-	{		
+	if(currentTemperature < monitor_temperat_val)
+	{
 		OUTP2_SET(1);
 	}
 	else	

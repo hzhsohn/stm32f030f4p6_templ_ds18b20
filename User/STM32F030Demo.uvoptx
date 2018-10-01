@@ -82,20 +82,45 @@
         <Book>
           <Number>0</Number>
           <Title>Quick Start Guide (STM32F030-Discovery)</Title>
-          <Path>D:\Keil_v5\ARM\PACK\Keil\STM32F0xx_DFP\2.0.0\MDK\Boards\ST\STM32F030-Discovery\Documents\32F030DISCOVERY_QSG.pdf</Path>
+          <Path>C:\App\Keil_v5\ARM\PACK\Keil\STM32F0xx_DFP\2.0.0\MDK\Boards\ST\STM32F030-Discovery\Documents\32F030DISCOVERY_QSG.pdf</Path>
         </Book>
         <Book>
           <Number>1</Number>
           <Title>Data Brief (STM32F030-Discovery)</Title>
-          <Path>D:\Keil_v5\ARM\PACK\Keil\STM32F0xx_DFP\2.0.0\MDK\Boards\ST\STM32F030-Discovery\Documents\DM00092305.pdf</Path>
+          <Path>C:\App\Keil_v5\ARM\PACK\Keil\STM32F0xx_DFP\2.0.0\MDK\Boards\ST\STM32F030-Discovery\Documents\DM00092305.pdf</Path>
         </Book>
         <Book>
           <Number>2</Number>
           <Title>Schematics (STM32F030-Discovery)</Title>
-          <Path>D:\Keil_v5\ARM\PACK\Keil\STM32F0xx_DFP\2.0.0\MDK\Boards\ST\STM32F030-Discovery\Documents\MB1134.pdf</Path>
+          <Path>C:\App\Keil_v5\ARM\PACK\Keil\STM32F0xx_DFP\2.0.0\MDK\Boards\ST\STM32F030-Discovery\Documents\MB1134.pdf</Path>
         </Book>
         <Book>
           <Number>3</Number>
+          <Title>User Manual (NUCLEO-F030R8)</Title>
+          <Path>C:\App\Keil_v5\ARM\PACK\Keil\STM32NUCLEO_BSP\1.6.0\Documents\DM00105823.pdf</Path>
+        </Book>
+        <Book>
+          <Number>4</Number>
+          <Title>Overview (NUCLEO-F030R8)</Title>
+          <Path>C:\App\Keil_v5\ARM\PACK\Keil\STM32NUCLEO_BSP\1.6.0\Documents\DM00105918.pdf</Path>
+        </Book>
+        <Book>
+          <Number>5</Number>
+          <Title>Getting started (NUCLEO-F030R8)</Title>
+          <Path>C:\App\Keil_v5\ARM\PACK\Keil\STM32NUCLEO_BSP\1.6.0\Documents\DM00105928.pdf</Path>
+        </Book>
+        <Book>
+          <Number>6</Number>
+          <Title>Schematics (NUCLEO-F030R8)</Title>
+          <Path>C:\App\Keil_v5\ARM\PACK\Keil\STM32NUCLEO_BSP\1.6.0\Documents\MB1136.pdf</Path>
+        </Book>
+        <Book>
+          <Number>7</Number>
+          <Title>STM32 Nucleo board (NUCLEO-F030R8)</Title>
+          <Path>http://www.st.com/web/catalog/tools/FM116/SC959/SS1532/LN1847/PF259997</Path>
+        </Book>
+        <Book>
+          <Number>8</Number>
           <Title>STM32F030-Discovery Web Page (STM32F030-Discovery)</Title>
           <Path>http://www.st.com/web/catalog/tools/FM116/SC959/SS1532/LN1848/PF259100</Path>
         </Book>
