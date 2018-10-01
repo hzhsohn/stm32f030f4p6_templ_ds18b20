@@ -45,17 +45,18 @@ void udoTemperature_cb(s16 currentTemperature)
 	{
 			if(currentTemperature<monitor_temperat_val) //小于目标温度定时加热
 			{
+					#define _INVT 50
 					static int nnn=0;
 					//间隔性进行加热
 					nnn++;
-					if(nnn<30)
+					if(nnn<_INVT)
 					{
 						OUTP1_SET(0);
 					}		
 					else
 					{
 						OUTP1_SET(1);
-						if(nnn>31)
+						if(nnn>_INVT + 20)
 						{
 							nnn=0;			
 						}

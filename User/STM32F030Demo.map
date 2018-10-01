@@ -1041,25 +1041,25 @@ Image component sizes
 
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Object Name
 
-       212         20          0          4          0        963   delay.o
+       212         20          0          4          0        971   delay.o
        644         16          0          0          0       2559   ds18b20.o
-        98          0          0          0          0       1133   flash_rw.o
-       176          0          0          0          0       1577   key.o
-        42          0          0          0          0      84711   led.o
-       820        146          0         32          0      34110   main.o
-        76          4          0          0          0        478   output.o
-        56         26        192          0       1536        596   startup_stm32f0xx.o
-      1512         30          0          0          0       7068   stm32f0xx_flash.o
-       496         22          0          0          0       3661   stm32f0xx_gpio.o
-        12          0          0          0          0        747   stm32f0xx_it.o
-       180         14          0          0          0       1276   stm32f0xx_misc.o
-      1528         42          0         16          0       8482   stm32f0xx_rcc.o
-      1396         12          0          0          0      12031   stm32f0xx_usart.o
-       504         34          0         20          0       1515   system_stm32f0xx.o
-       224          8          0          4          0       2822   usart1.o
+        98          0          0          0          0       1141   flash_rw.o
+       176          0          0          0          0       1585   key.o
+        42          0          0          0          0      84719   led.o
+       820        146          0         32          0      34134   main.o
+        76          4          0          0          0        482   output.o
+        56         26        192          0       1536        600   startup_stm32f0xx.o
+      1512         30          0          0          0       7076   stm32f0xx_flash.o
+       496         22          0          0          0       3665   stm32f0xx_gpio.o
+        12          0          0          0          0        751   stm32f0xx_it.o
+       180         14          0          0          0       1280   stm32f0xx_misc.o
+      1528         42          0         16          0       8490   stm32f0xx_rcc.o
+      1396         12          0          0          0      12039   stm32f0xx_usart.o
+       504         34          0         20          0       1523   system_stm32f0xx.o
+       224          8          0          4          0       2830   usart1.o
 
     ----------------------------------------------------------------------
-      7980        374        224         76       1536     163729   Object Totals
+      7980        374        224         76       1536     163845   Object Totals
          0          0         32          0          0          0   (incl. Generated)
          4          0          0          0          0          0   (incl. Padding)
 
@@ -1137,8 +1137,8 @@ Image component sizes
 
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   
 
-     13240        526        420         76       1636     164133   Grand Totals
-     13240        526        420         76       1636     164133   ELF Image Totals
+     13240        526        420         76       1636     164249   Grand Totals
+     13240        526        420         76       1636     164249   ELF Image Totals
      13240        526        420         76          0          0   ROM Totals
 
 ==============================================================================
