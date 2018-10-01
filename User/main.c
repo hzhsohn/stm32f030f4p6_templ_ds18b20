@@ -31,10 +31,14 @@ void udoTemperature_cb(s16 currentTemperature)
 	{
 			g_isAchieveTemperat=0;
 	}
+	if(currentTemperature>=monitor_temperat_val)
+	{
+		  g_isAchieveTemperat=1;
+	}
+	
 	//继电器控制,在接近目标温度-1度后停止加热
 	if(currentTemperature<monitor_temperat_val && 0==g_isAchieveTemperat)
 	{
-		  g_isAchieveTemperat=1;
 			OUTP1_SET(1);
 	}
 	else 
