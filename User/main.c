@@ -26,8 +26,8 @@ int g_isAchieveTemperat=0;
 void udoTemperature_cb(s16 currentTemperature)
 {
 	printf("{\"temperature\":%0.1f,\"trigger\":%0.1f}",currentTemperature*0.1f,monitor_temperat_val*0.1f);
-	//当前温度低于控制温度超过一度,直接加热么控制温度
-	if(monitor_temperat_val - currentTemperature >= 10 )
+	//当前温度低于控制温度超过0.5度,直接加热么控制温度
+	if(monitor_temperat_val - currentTemperature >= 5 )
 	{
 			g_isAchieveTemperat=0;
 	}
@@ -56,7 +56,7 @@ void udoTemperature_cb(s16 currentTemperature)
 					else
 					{
 						OUTP1_SET(1);
-						if(nnn>_INVT + 20)
+						if(nnn>_INVT + 40)
 						{
 							nnn=0;			
 						}
