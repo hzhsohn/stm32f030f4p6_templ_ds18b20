@@ -76,10 +76,16 @@ void USART1_Init(uint32_t baud)
 //=============================================================================
 void USART1_IRQHandler(void)
 {
-	if(USART_GetITStatus(USART1, USART_IT_RXNE) != RESET)
+	if(USART_GetFlagStatus(USART1, USART_FLAG_ORE) != RESET) 
+	{ 
+	USART_ClearFlag(USART1, USART_FLAG_ORE); 
+	}
+	if (USART_GetITStatus(USART1,USART_IT_RXNE)!=RESET)
 	{
-   USART_SendData(USART1,USART_ReceiveData(USART1));
-	 while (USART_GetFlagStatus(USART1,USART_FLAG_TXE) == RESET);
+		
+		//µ»¥˝÷’∂À ‰»Î
+		// while(USART_GetFlagStatus(USART1,USART_FLAG_TC)!=SET);
+		USART_SendData(USART1,USART_ReceiveData(USART1));
 	}
 			
 }
